@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Establecer Atributos</title>
+        <style>
+            .negrita {
+                font-weight: bold;
+            }
+            .tachado {
+                text-decoration: line-through;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 id="principal">Jugando con atributos</h1>
+        <div>De a poco vamos teniendo control sobre nuestros documentos!!!</div>
+
+        <script>
+            var titulo = document.querySelector('h1');
+            var descripcion = document.querySelector('div');
+
+            var atributosTitulo = titulo.hasAttributes();
+            var atributosDescripcion = descripcion.hasAttributes();
+
+            if (atributosTitulo == true) {
+                titulo.classList.add('tachado');
+                console.log(titulo.classList[0]);
+            } else {
+                titulo.classList.add('negrita');
+                console.log(titulo.classList[0]);
+            }
+
+            if (atributosDescripcion == true) {
+                descripcion.classList.add('tachado');
+                console.log(descripcion.classList[0]);
+            } else {
+                descripcion.classList.add('negrita');
+                console.log(descripcion.classList[0]);
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Atributos</title>
+        <link rel="stylesheet" href="dom_005.css" />
+    </head>
+    <body>
+        <a href="#" class="menu">Link 1</a>
+        <a href="#" class="menu">Link 2</a>
+        <a href="#" class="menu">Link 3</a>
+        <a href="#" class="menu">Link 4</a>
+        <a href="#" class="menu">Link 5</a>
+
+        <script>
+            var primerElemento = document.querySelector('a');
+
+            var resultado = primerElemento.hasAttribute('class');
+
+            if (primerElemento == true) {
+                primerElemento.classList.add('azul');
+                console.log(primerElemento.classList[1]);
+            } else {
+                primerElemento.classList.add('rojo');
+                console.log(primerElemento.classList[1]);
+            }
+        </script>
+    </body>
+</html>

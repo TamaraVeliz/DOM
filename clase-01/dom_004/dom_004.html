@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Atributos</title>
+        <link rel="stylesheet" href="dom_004.css" />
+    </head>
+    <body>
+        <a href="#" class="menu">Link 1</a>
+        <a href="#" class="menu">Link 2</a>
+        <a href="#" class="menu">Link 3</a>
+        <a href="#" class="menu">Link 4</a>
+        <a href="#" class="menu">Link 5</a>
+
+        <script>
+            var color = prompt('Ingrese un color (verde, azul, rojo)');
+
+            var elementoLista = document.querySelector('a');
+
+            if (color === 'verde' || color === 'azul' || color === 'rojo') {
+                elementoLista.classList.add(color);
+                console.log(elementoLista.classList[1]);
+            }
+        </script>
+    </body>
+</html>
