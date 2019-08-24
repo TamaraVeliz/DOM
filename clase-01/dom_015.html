@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Phasellus ullamcorper ipsum rutrum nunc</title>
+    </head>
+    <body>
+        <script>
+            var body = document.querySelector('body');
+
+            var ul = document.createElement('ul');
+
+            do {
+                r = prompt('ingrese un nombre o exit para terminar');
+
+                if (r != 'exit') {
+                    li = document.createElement('li');
+                    li.innerText = r;
+                    ul.appendChild(li);
+
+                    var numero = ul.children.length;
+
+                    if (numero % 2 === 0) {
+                        li.style.backgroundColor = '#ddd';
+                    } else {
+                        li.style.backgroundColor = '#eee';
+                    }
+                }
+            } while (r != 'exit');
+
+            body.appendChild(ul);
+        </script>
+    </body>
+</html>

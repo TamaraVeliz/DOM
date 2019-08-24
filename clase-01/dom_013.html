@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Phasellus ullamcorper ipsum rutrum nunc</title>
+</head>
+<body>
+
+    <script>
+    
+    
+    var body = document.querySelector('body');
+
+    var nombres = ['maria', 'ana', 'jose', 'juan', 'pablo', 'peru', 'mariana', 'oscar', 'lujan', 'shel'];
+
+    var lista = document.createElement('ul');
+
+    nombres.forEach(function(nombre) {
+        var elementos = document.createElement('li');
+        elementos.textContent = nombre;
+        lista.appendChild(elementos);
+});
+
+body.appendChild(lista);
+    
+    </script>
+</body>
+</html>
